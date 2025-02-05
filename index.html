@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+ 
+
+    <style>
+
+        *{
+
+            outline: none;
+            border: none;
+            text-decoration: none;
+            list-style: none;
+            transition: all 0.3s ease;
+            -webkit-tap-highlight-color:transparent;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-smoothing: grayscale;
+
+        }
+
+        body {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 100vh;
+
+            color: black;
+
+            font-size: 17px;
+
+            font-family: "Lato", serif;
+
+            background-color: #F9FAFF;
+
+        }
+
+        span {
+
+            color: #F9FAFF;
+
+            background-color: rgb(26, 26, 26);
+
+            padding: 10px;
+
+            border-radius: 10px;
+
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        }
+
+        .container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            text-align: center;
+
+        }
+
+ 
+
+        #resultB {
+
+            color: rgb(255, 255, 255);
+
+            background-color: rgb(35, 35, 35);
+
+            padding: 10px;
+
+            border-radius: 10px;
+
+            min-width: fit-content;
+
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            /* display: none; */
+
+        }
+
+ 
+
+        #reload {
+
+            color: rgb(185, 185, 185);
+
+            font-size: 14px;
+
+            font-style: italic;
+
+        }
+
+ 
+
+        strong{
+
+            color: rgb(15, 15, 15);
+
+        }
+
+ 
+
+        .reloadFull {
+
+            position: absolute;
+
+            backdrop-filter: blur( 12.5px );
+
+            -webkit-backdrop-filter: blur( 12.5px );
+
+            min-height: 100vh;
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            color: black;
+
+            /* display: none; */
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3 id="resultC">Digite uma tecla</h3>
+
+        <h3 id="resultB">Código</h3>
+
+ 
+
+        <h4 id="reload">Pressione <strong>R</strong> para recarregar a página.</h4>
+
+    </div>
+
+ 
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
